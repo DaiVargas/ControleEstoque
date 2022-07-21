@@ -11,10 +11,10 @@
         <asp:TextBox class="form-control" Width="50%" runat="server" ID="txtNome" />
 
         <label>Quantidade</label>
-        <asp:TextBox class="form-control" Width="20%" runat="server" ID="txtQuantidade" />
+        <asp:TextBox class="form-control" Width="20%" runat="server" ID="txtQuantidade" TextMode="Number" />
 
         <label>Preço</label>
-        <asp:TextBox class="form-control" Width="20%" runat="server" ID="txtPreco" />
+        <asp:TextBox class="form-control" Width="20%" runat="server" ID="txtPreco" TextMode="Number" />
     </div>
 
     <div class="form-group">
