@@ -6,24 +6,24 @@
     <asp:Panel ID="pnUsuario" runat="server" Visible="false">
         <div class="container">
             <div class="span10 offset-1">
-        <h3><span class="badge badge-secondary">Cadastro de Usuários</span></h3>
-        <br />
-        <div class="form-group">
-            <label>Nome do Usuário</label>
-            <asp:TextBox class="form-control" Width="50%" runat="server" ID="txtNome" />
+                <h3><span class="badge badge-secondary">Cadastro de Usuários</span></h3>
+                <br />
+                <div class="form-group">
+                    <label>Nome do Usuário</label>
+                    <asp:TextBox class="form-control" Width="50%" runat="server" ID="txtNome" />
 
-            <label>Email</label>
-            <asp:TextBox class="form-control" Width="20%" runat="server" ID="txtEmail" />
+                    <label>Email</label>
+                    <asp:TextBox class="form-control" Width="20%" runat="server" ID="txtEmail" />
 
-            <label>Senha</label>
-            <asp:TextBox class="form-control" Width="20%" runat="server" ID="txtSenha" TextMode="Password" />
-        </div>
+                    <label>Senha</label>
+                    <asp:TextBox class="form-control" Width="20%" runat="server" ID="txtSenha" TextMode="Password" />
+                </div>
 
-        <div class="form-group">
-            <asp:Button ID="btnGravar" runat="server" Text="Gravar" CssClass="btn btn-success btn-sm" OnClick="btnGravar_Click" />
-            <asp:Button ID="btnLimpar" runat="server" Text="Limpar" CssClass="btn btn-warning btn-sm" OnClick="btnLimpar_Click" />
-        </div>
-        </div>
+                <div class="form-group">
+                    <asp:Button ID="btnGravar" runat="server" Text="Gravar" CssClass="btn btn-success btn-sm" OnClick="btnGravar_Click" />
+                    <asp:Button ID="btnLimpar" runat="server" Text="Limpar" CssClass="btn btn-warning btn-sm" OnClick="btnLimpar_Click" />
+                </div>
+            </div>
         </div>
     </asp:Panel>
 
