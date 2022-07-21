@@ -22,7 +22,7 @@ namespace ControleEstoque
             string senha = tbSenha.Text;
 
             DALUsuario du = new DALUsuario();
-            ModeloUsuario u = du.GetRegistro(email, senha);
+            ModeloUsuario u = du.GetRegistroLogin(email, senha);
             if (email == u.email && senha == u.senha)
             {
                 Session["id"] = u.id;

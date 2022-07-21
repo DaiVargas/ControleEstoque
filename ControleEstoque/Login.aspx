@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title></title>
+    <title>Formulário de login</title>
     <webopt:BundleReference runat="server" Path="~/Content/css" />
 
 </head>
@@ -31,7 +31,7 @@
 
                         <!-- Senha -->
                         <div class="form-outline mb-3">
-                            <asp:TextBox ID="tbSenha" runat="server" placeholder="Informe a senha" CssClass="form-control" />
+                            <asp:TextBox ID="tbSenha" runat="server" placeholder="Informe a senha" CssClass="form-control" TextMode="Password" />
                             <label class="form-label" for="form3Example4">Senha</label>
                         </div>
 

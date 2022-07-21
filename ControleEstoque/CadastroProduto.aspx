@@ -9,7 +9,7 @@
     <div class="form-group">
         <label>Nome do Produto</label>
         <asp:TextBox class="form-control" Width="50%" runat="server" ID="txtNome" />
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtNome" ErrorMessage="Informe um nome de usuário" Font-Bold="True" ForeColor="Maroon"></asp:RequiredFieldValidator>
+
         <label>Quantidade</label>
         <asp:TextBox class="form-control" Width="20%" runat="server" ID="txtQuantidade" />
 

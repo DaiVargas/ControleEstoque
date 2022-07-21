@@ -14,7 +14,6 @@ namespace ControleEstoque
             if (Session["email"] == null)
             {
                 Response.Redirect("~/Login.aspx");
-                
             }
 
             lblEmail.Text = Session["email"].ToString();
