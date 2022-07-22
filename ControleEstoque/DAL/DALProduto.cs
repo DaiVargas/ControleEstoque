@@ -207,34 +207,5 @@ namespace ControleEstoque.DAL
             }
         }
 
-        public ModeloProduto ConsultarIdAlteracao(int codigo)
-        {
-            ModeloProduto obj = new ModeloProduto();
-
-            SqlConnection con = new SqlConnection();
-            con.ConnectionString = connString.ToString();
-            SqlCommand cmd = new SqlCommand();
-            try
-            {
-                cmd.Connection = con;
-                cmd.CommandText = "select * from produto where ultimaAlteracao = @ultimaAlteracao";
-                cmd.Parameters.AddWithValue("@ultimaAlteracao", codigo);
-
-                con.Open();
-                SqlDataReader registro = cmd.ExecuteReader();
-                if (registro.HasRows)
-                {
-                    throw new Exception("Usuario não pode ser excluido, pois existe vinculo com a tabela produtos!");
-                }
-
-                con.Close();
-                return obj;
-            }
-            catch (SqlException ex)
-            {
-                throw new Exception(ex.Message);
-            }
-        }
-
     }
 }

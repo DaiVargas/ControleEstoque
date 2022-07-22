@@ -97,8 +97,6 @@ namespace ControleEstoque
                     DALUsuario dal = new DALUsuario();
                     DALProduto dp = new DALProduto();
 
-                    dp.ConsultarIdAlteracao(cod);
-
                     dal.Excluir(cod);
                     atualizarLista();
                
