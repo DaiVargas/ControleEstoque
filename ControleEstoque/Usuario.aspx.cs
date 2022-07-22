@@ -90,13 +90,18 @@ namespace ControleEstoque
         {
             if (e.CommandName == "btExcluir")
             {
-                int index = Convert.ToInt32(e.CommandArgument);
-                int cod = Convert.ToInt32(gvDados.Rows[index].Cells[0].Text);
+                
+                    int index = Convert.ToInt32(e.CommandArgument);
+                    int cod = Convert.ToInt32(gvDados.Rows[index].Cells[0].Text);
 
-                DALUsuario dal = new DALUsuario();
+                    DALUsuario dal = new DALUsuario();
+                    DALProduto dp = new DALProduto();
 
-                dal.Excluir(cod);
-                atualizarLista();
+                    dp.ConsultarIdAlteracao(cod);
+
+                    dal.Excluir(cod);
+                    atualizarLista();
+               
             }
             
         }
